@@ -20,7 +20,7 @@
 include_recipe "mysql::server"
 include_recipe "mythtv::default"
 
-package "mythtv-backend"
+package "mythtv-backend-master"
 
 service "mythtv-backend" do
     if (platform?("ubuntu") && node.platform_version.to_f >= 10.04)
